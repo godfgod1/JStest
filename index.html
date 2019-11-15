@@ -17,7 +17,18 @@ alert(`it's night!`);" >
 <input type="button" value="noon" 
 onclick="document.querySelector('#target').style.backgroundColor = 'white'; 
 document.querySelector('#target').style.color = 'black'; 
-alert(`it's noon nice~`);"  >
+alert(`it's noon nice~`);" >
+</div>
+<div>
+    <input id="night__day" type="button" value="night" onclick="
+    if(document.querySelector('#night__day').value === 'night' ){
+    document.querySelector('#target').style.backgroundColor = 'black';
+    document.querySelector('#target').style.color = 'white'; 
+    alert(`it's night!`); }
+    else {
+    onclick=document.querySelector('#target').style.backgroundColor = 'white'; 
+    document.querySelector('#target').style.color = 'black'; 
+    alert(`it's noon nice~`)"; >
 </div>
 </body>
 </html>
