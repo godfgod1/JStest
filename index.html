@@ -4,31 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Index</title>
 </head>
 <body id="target">
-    <div>
+    <!-- <div>
 <input type="button" value="night" onclick="
 document.querySelector('#target').style.backgroundColor = 'black';
 document.querySelector('#target').style.color = 'white'; 
 alert(`it's night!`);" >
-</div>
-<div>
+</div> -->
+<!-- <div>
 <input type="button" value="noon" 
 onclick="document.querySelector('#target').style.backgroundColor = 'white'; 
 document.querySelector('#target').style.color = 'black'; 
 alert(`it's noon nice~`);" >
-</div>
-<div>
+</div> -->
+<!-- <div>
     <input id="night__day" type="button" value="night" onclick="
     if(document.querySelector('#night__day').value === 'night' ){
     document.querySelector('#target').style.backgroundColor = 'black';
     document.querySelector('#target').style.color = 'white'; 
-    alert(`it's night!`); }
-    else {
+    document.querySelector('#night__day').value = 'day';
+    alert(`it's night!`); 
+} else {
     onclick=document.querySelector('#target').style.backgroundColor = 'white'; 
     document.querySelector('#target').style.color = 'black'; 
-    alert(`it's noon nice~`)"; >
+    document.querySelector('#night__day').value = 'night';
+    alert(`it's noon nice~`);}" >
+</div> -->
+<h1><a href="http://naver.com">Naver</a></h1>
+<div>
+    <input  type="button" value="night2" onclick="
+    var target = document.querySelector('#target');
+    if(this.value === 'night2' ){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white'; 
+    this.value = 'day';
+    alert(`it's night!`); 
+    var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+alist[i].style.color = 'powderblue';
+i = i + 1; 
+}
+} else {
+    onclick=target.style.backgroundColor = 'white'; 
+    target.style.color = 'black'; 
+    this.value = 'night2';
+    alert(`it's noon nice~`); 
+   var alist = document.querySelectorAll('a');
+   var i = 0;
+   while(i < alist.length){
+   alist[i].style.color ='red';
+   i = i + 1; 
+   }
+}"> 
 </div>
+<h1><a href="http://google.com">Google</a></h1>
 </body>
 </html>
