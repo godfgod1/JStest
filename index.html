@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
+<script>
+    function nightDayHandler(self){
+        var target = document.querySelector('#target');
+        if(self.value === 'night2' ){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white'; 
+        self.value = 'day';
+        alert(`it's night!`); 
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1; 
+        }
+        } else {
+        onclick=target.style.backgroundColor = 'white'; 
+        target.style.color = 'black'; 
+        self.value = 'night2';
+        alert(`it's noon nice~`); 
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+        alist[i].style.color ='red';
+        i = i + 1; 
+        }
+        } 
+    }
+</script>
 </head>
 <body id="target">
     <!-- <div>
@@ -35,30 +63,7 @@ alert(`it's noon nice~`);" >
 <h1><a href="http://naver.com">Naver</a></h1>
 <div>
     <input  type="button" value="night2" onclick="
-    var target = document.querySelector('#target');
-    if(this.value === 'night2' ){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white'; 
-    this.value = 'day';
-    alert(`it's night!`); 
-    var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-alist[i].style.color = 'powderblue';
-i = i + 1; 
-}
-} else {
-    onclick=target.style.backgroundColor = 'white'; 
-    target.style.color = 'black'; 
-    this.value = 'night2';
-    alert(`it's noon nice~`); 
-   var alist = document.querySelectorAll('a');
-   var i = 0;
-   while(i < alist.length){
-   alist[i].style.color ='red';
-   i = i + 1; 
-   }
-}"> 
+    nightDayHandler(this);">
 </div>
 <h1><a href="http://google.com">Google</a></h1>
 </body>
