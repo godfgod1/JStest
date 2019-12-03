@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index2</title>
+</head>
+<body>
+    <h1>WEB</h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+    target.style.backgroundColor = 'yellow';
+    target.style.color = 'white';
+    this.value = 'day';
+    var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+alist[i].style.color = 'powderblue';
+i = i + 1;
+      }
+    
+    } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'blue';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+alist[i].style.color = 'red';
+i = i + 1;
+      }
+    }
+   ">
+   
+    <ul>
+        <li><a href="http://google.com/">HTML</a></li>
+        <li><a href="http://google.com/">CSS</li></a> 
+            <li><a href="http://google.com/">JavaScript</a></li>
+    </ul>
+</body>
+</html>
